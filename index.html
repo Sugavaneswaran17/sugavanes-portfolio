@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sugavaneswaran R | Portfolio</title>
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -14,37 +20,28 @@
       color: #fff;
       scroll-behavior: smooth;
     }
-
     .gradient-text {
       background: linear-gradient(90deg, #ff6a00, #ee0979);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
     .glass {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(15px);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-
     .btn {
       background: linear-gradient(90deg, #ff6a00, #ee0979);
       color: white;
       transition: 0.3s;
     }
-
     .btn:hover {
       transform: scale(1.05);
       box-shadow: 0 0 20px rgba(255, 106, 0, 0.5);
     }
-
     header {
       backdrop-filter: blur(10px);
       background: rgba(0, 0, 0, 0.7);
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -93,7 +90,6 @@
     <p class="text-gray-400 mb-10">Here are a few of my works.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
-      <!-- Project Card -->
       <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
         <img src="images8.jpg" class="rounded-lg mb-4">
         <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Django Railway Reservation</h3>
@@ -128,12 +124,12 @@
     <h2 class="text-3xl font-bold gradient-text mb-6">My Skills</h2>
     <p class="text-gray-400 mb-10">Technologies I’ve worked with</p>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Python</div>
-      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Django</div>
-      <div class="card glass py-4 rounded-lg hover:scale-105 transition">HTML</div>
-      <div class="card glass py-4 rounded-lg hover:scale-105 transition">CSS</div>
-      <div class="card glass py-4 rounded-lg hover:scale-105 transition">JavaScript</div>
-      <div class="card glass py-4 rounded-lg hover:scale-105 transition">WordPress</div>
+      <div class="glass py-4 rounded-lg hover:scale-105 transition">Python</div>
+      <div class="glass py-4 rounded-lg hover:scale-105 transition">Django</div>
+      <div class="glass py-4 rounded-lg hover:scale-105 transition">HTML</div>
+      <div class="glass py-4 rounded-lg hover:scale-105 transition">CSS</div>
+      <div class="glass py-4 rounded-lg hover:scale-105 transition">JavaScript</div>
+      <div class="glass py-4 rounded-lg hover:scale-105 transition">WordPress</div>
     </div>
   </section>
 
@@ -150,99 +146,61 @@
     </form>
   </section>
 
-  <!-- Footer -->
-<footer class="bg-black shadow-lg mt-12 py-8 w-full">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      
-      <!-- Address -->
-      <div>
-        <h3 class="text-lg font-bold gradient-text mb-3">Address</h3>
-        <ul class="text-sm text-gray-400 space-y-2">
-          <li>
-            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <ion-icon name="navigate-circle-outline" class="mr-2"></ion-icon>
-              3/85 Karapaga Vinayagar St,
-            </a>
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              Vattamuthampatti,
-            </a>
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              S.Kollapatty, Salem - 30
-            </a>
-          </li>
-        </ul>
+  <!-- Responsive Footer -->
+  <footer class="bg-black shadow-lg mt-12 py-10 w-full text-center md:text-left">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Address -->
+        <div>
+          <h3 class="text-lg font-bold gradient-text mb-3">Address</h3>
+          <ul class="text-sm text-gray-400 space-y-2">
+            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="hover:text-[#ff7e5f]">3/85 Karapaga Vinayagar St,</a></li>
+            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="hover:text-[#ff7e5f]">Vattamuthampatti,</a></li>
+            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="hover:text-[#ff7e5f]">S.Kollapatty, Salem - 30</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-bold gradient-text mb-3">Contact Me</h3>
+          <ul class="text-sm text-gray-400 space-y-2">
+            <li><a href="mailto:sugavanesraja6598@gmail.com" class="hover:text-[#ff7e5f]"><i class="fas fa-envelope mr-2"></i> sugavanesraja6598@gmail.com</a></li>
+            <li><a href="tel:+916383938287" class="hover:text-[#ff7e5f]"><i class="fas fa-phone mr-2"></i> +91 6383938287</a></li>
+            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" class="hover:text-[#ff7e5f]"><i class="fas fa-map-marker-alt mr-2"></i> Salem, Tamil Nadu</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h3 class="text-lg font-bold gradient-text mb-3">Social Media</h3>
+          <ul class="text-sm text-gray-400 space-y-2">
+            <li><a href="https://facebook.com" class="hover:text-[#ff7e5f]"><i class="fab fa-facebook mr-2"></i> Facebook</a></li>
+            <li><a href="https://twitter.com" class="hover:text-[#ff7e5f]"><i class="fab fa-twitter mr-2"></i> Twitter</a></li>
+            <li><a href="https://github.com/Sugavaneswaran17" class="hover:text-[#ff7e5f]"><i class="fab fa-github mr-2"></i> GitHub</a></li>
+            <li><a href="https://linkedin.com/in/sugavaneswaran-sugavanes-896687269/" class="hover:text-[#ff7e5f]"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Contact Me -->
-      <div>
-        <h3 class="text-lg font-bold gradient-text mb-3">Contact Me</h3>
-        <ul class="text-sm text-gray-400 space-y-2">
-          <li>
-            <a href="mailto:sugavanesraja6598@gmail.com" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <i class="fas fa-envelope mr-2"></i>
-              sugavanesraja6598@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+916383938287" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <i class="fas fa-phone mr-2"></i>
-              +91 6383938287
-            </a>
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <i class="fas fa-map-marker-alt mr-2"></i>
-              Salem, Tamil Nadu, India
-            </a>
-          </li>
-        </ul>
+      <div class="border-t border-gray-800 mt-8 pt-4 text-center text-gray-500 text-xs">
+        © 2025 Sugavaneswaran R | All Rights Reserved
       </div>
-
-      <!-- Social Media -->
-      <div>
-        <h3 class="text-lg font-bold gradient-text mb-3">Social Media</h3>
-        <ul class="text-sm text-gray-400 space-y-2">
-          <li>
-            <a href="https://www.facebook.com" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <i class="fab fa-facebook mr-2"></i>
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <i class="fab fa-twitter mr-2"></i>
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Sugavaneswaran17" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <i class="fab fa-github mr-2"></i>
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/sugavaneswaran-sugavanes-896687269/" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
-              <i class="fab fa-linkedin mr-2"></i>
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </div>
-
     </div>
+  </footer>
 
-    <!-- Bottom Line -->
-    <div class="border-t border-gray-800 mt-8 pt-4 text-center text-gray-500 text-xs">
-      © 2025 Sugavaneswaran R | All Rights Reserved
-    </div>
-  </div>
-</footer>
-</html>                    
+  <script>
+    ScrollReveal().reveal('section', {
+      duration: 1000,
+      distance: '50px',
+      easing: 'ease-out',
+      origin: 'bottom',
+      reset: true
+    });
+  </script>
+</body>
+                                                                    </html>                    
+
 
 
 
