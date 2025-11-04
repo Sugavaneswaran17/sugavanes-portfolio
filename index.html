@@ -1,103 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sugavaneswaran R | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
   <style>
     body {
-      font-family: "Poppins", sans-serif;
-      background: radial-gradient(circle at top left, #0f0f0f, #000);
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0f0f0f, #000);
       color: #fff;
       scroll-behavior: smooth;
     }
 
-    /* Gradient text */
     .gradient-text {
       background: linear-gradient(90deg, #ff6a00, #ee0979);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    /* Navbar glass effect */
-    header {
-      backdrop-filter: blur(10px);
-      background: rgba(0, 0, 0, 0.8);
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 50;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    /* Gradient button */
-    .btn {
-      background: linear-gradient(90deg, #ff6a00, #ee0979);
-      color: white;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(255, 106, 0, 0.7);
-    }
-
-    /* Glass cards */
     .glass {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(15px);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease-in-out;
     }
 
-    .glass:hover {
-      transform: scale(1.04);
-      box-shadow: 0 0 20px rgba(238, 9, 121, 0.3);
+    .btn {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      color: white;
+      transition: 0.3s;
     }
 
-    /* Mobile menu animation */
-    #menu-toggle:checked + #menu {
-      display: block;
-      animation: fadeIn 0.4s ease-in-out;
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 106, 0, 0.5);
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
+    header {
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.7);
     }
 
-    /* Footer glow animation */
-    footer {
-      background: linear-gradient(90deg, #000, #111, #000);
-      animation: footerGlow 6s infinite alternate;
-    }
-
-    @keyframes footerGlow {
-      0% { box-shadow: 0 0 10px #ff6a00; }
-      100% { box-shadow: 0 0 25px #ee0979; }
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
-
 <body>
+
   <!-- Navbar -->
-  <header>
+  <header class="fixed w-full z-50 border-b border-gray-800">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
       <h1 class="text-xl font-bold gradient-text">SUGAVANESWARAN R</h1>
-
-      <!-- Hamburger menu (mobile) -->
-      <input type="checkbox" id="menu-toggle" class="hidden" />
-      <label for="menu-toggle" class="md:hidden cursor-pointer text-2xl text-white">
-        <i class="fas fa-bars"></i>
-      </label>
-
-      <nav id="menu" class="hidden md:flex md:space-x-8 absolute md:relative bg-black md:bg-transparent top-16 left-0 w-full md:w-auto py-4 md:py-0 text-center md:text-left z-40">
-        <ul class="space-y-4 md:space-y-0 md:flex md:space-x-8 text-gray-300">
+      <nav>
+        <ul class="hidden md:flex space-x-8 text-gray-300">
           <li><a href="#home" class="hover:text-[#ff6a00]">Home</a></li>
           <li><a href="#about" class="hover:text-[#ff6a00]">About</a></li>
           <li><a href="#projects" class="hover:text-[#ff6a00]">Projects</a></li>
@@ -105,19 +63,16 @@
           <li><a href="#contact" class="hover:text-[#ff6a00]">Contact</a></li>
         </ul>
       </nav>
-
-      <a href="Sugavaneswaran_CV.pdf" download class="hidden md:block btn px-4 py-2 rounded-full text-sm font-semibold">
-        Download CV
-      </a>
+      <a href="Sugavaneswaran_CV.pdf" download class="btn px-4 py-2 rounded-full text-sm font-semibold">Download CV</a>
     </div>
   </header>
 
   <!-- Home -->
   <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24">
-    <img src="images2.jpg" class="w-40 h-40 rounded-full border-4 border-[#ff6a00] mb-6 shadow-lg hover:scale-110 transition" />
+    <img src="images2.jpg" class="w-40 h-40 rounded-full border-4 border-[#ff6a00] mb-6 shadow-lg hover:scale-105 transition">
     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-2">Hello, I'm Sugavaneswaran R</h2>
     <p class="text-gray-400 text-lg mb-4">B.Sc. Computer Science | Web Developer</p>
-    <p class="text-gray-400 max-w-2xl">I love building clean, responsive web applications using HTML, CSS, JavaScript, Python, and Django.</p>
+    <p class="text-gray-400 max-w-2xl">I’m a passionate B.Sc. Computer Science fresher eager to kickstart my career. I love building clean, responsive web applications using HTML, CSS, JavaScript, Python, and Django.</p>
     <a href="#projects" class="mt-6 btn px-6 py-3 rounded-full font-semibold">View My Work</a>
   </section>
 
@@ -125,10 +80,9 @@
   <section id="about" class="py-20 glass mx-4 md:mx-20 mt-8 rounded-2xl px-8">
     <h2 class="text-3xl font-bold gradient-text text-center mb-10">About Me</h2>
     <div class="flex flex-col md:flex-row items-center">
-      <img src="images1.jpg" class="w-72 rounded-xl border-4 border-[#ee0979] mb-6 md:mb-0 md:mr-10 shadow-lg hover:scale-105 transition" />
+      <img src="images1.jpg" class="w-72 rounded-xl border-4 border-[#ee0979] mb-6 md:mb-0 md:mr-10 shadow-lg">
       <p class="text-gray-300 text-lg leading-relaxed">
-        I’m a Computer Science graduate passionate about front-end and full-stack web development.
-        I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+        I’m a Computer Science graduate passionate about front-end and full-stack web development. I enjoy turning complex problems into simple, beautiful, and intuitive designs. I’m looking for opportunities to grow and collaborate with innovative teams.
       </p>
     </div>
   </section>
@@ -136,24 +90,35 @@
   <!-- Projects -->
   <section id="projects" class="py-20 text-center">
     <h2 class="text-3xl font-bold gradient-text mb-6">My Projects</h2>
+    <p class="text-gray-400 mb-10">Here are a few of my works.</p>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
-      <div class="glass rounded-xl p-6">
-        <img src="images8.jpg" class="rounded-lg mb-4" />
-        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Railway Reservation</h3>
-        <p class="text-gray-400 mb-4">Django-based app for train ticket booking and management.</p>
+      <!-- Project Card -->
+      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+        <img src="images8.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Django Railway Reservation</h3>
+        <p class="text-gray-400 mb-4">Full-stack web app using Django for booking and managing train tickets.</p>
         <a href="https://github.com/Sugavaneswaran17/Railway-Reservation-system" class="text-[#ee0979] hover:underline">View Project</a>
       </div>
-      <div class="glass rounded-xl p-6">
-        <img src="images14.jpg" class="rounded-lg mb-4" />
-        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Weather App</h3>
-        <p class="text-gray-400 mb-4">JavaScript weather app with OpenWeather API.</p>
-        <a href="https://github.com/Sugavaneswaran17/weather-app" class="text-[#ee0979] hover:underline">View Code</a>
+
+      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+        <img src="images14.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">JavaScript Weather App</h3>
+        <p class="text-gray-400 mb-4">Dynamic weather web app using OpenWeather API with live data.</p>
+        <div class="space-x-4">
+          <a href="https://github.com/Sugavaneswaran17/weather-app" class="text-[#ee0979] hover:underline">View Code</a>
+          <a href="https://sugavaneswaran17.github.io/weather-app/" class="text-[#ff6a00] hover:underline">Live Demo</a>
+        </div>
       </div>
-      <div class="glass rounded-xl p-6">
-        <img src="images7.jpg" class="rounded-lg mb-4" />
+
+      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+        <img src="images7.jpg" class="rounded-lg mb-4">
         <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Currency Converter</h3>
-        <p class="text-gray-400 mb-4">Responsive JS-based currency converter.</p>
-        <a href="https://github.com/Sugavaneswaran17/currency-converter" class="text-[#ee0979] hover:underline">View Code</a>
+        <p class="text-gray-400 mb-4">Responsive currency converter built with HTML, CSS, and JavaScript.</p>
+        <div class="space-x-4">
+          <a href="https://github.com/Sugavaneswaran17/currency-converter" class="text-[#ee0979] hover:underline">View Code</a>
+          <a href="https://sugavaneswaran17.github.io/currency-converter/" class="text-[#ff6a00] hover:underline">Live Demo</a>
+        </div>
       </div>
     </div>
   </section>
@@ -161,59 +126,127 @@
   <!-- Skills -->
   <section id="skills" class="py-20 glass mx-4 md:mx-20 rounded-2xl px-8 text-center">
     <h2 class="text-3xl font-bold gradient-text mb-6">My Skills</h2>
+    <p class="text-gray-400 mb-10">Technologies I’ve worked with</p>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-      <div class="glass py-4 rounded-lg hover:scale-110 transition">Python</div>
-      <div class="glass py-4 rounded-lg hover:scale-110 transition">Django</div>
-      <div class="glass py-4 rounded-lg hover:scale-110 transition">HTML</div>
-      <div class="glass py-4 rounded-lg hover:scale-110 transition">CSS</div>
-      <div class="glass py-4 rounded-lg hover:scale-110 transition">JavaScript</div>
-      <div class="glass py-4 rounded-lg hover:scale-110 transition">WordPress</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Python</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Django</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">HTML</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">CSS</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">JavaScript</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">WordPress</div>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="py-20 text-center">
     <h2 class="text-3xl font-bold gradient-text mb-6">Get In Touch</h2>
+    <p class="text-gray-400 mb-8">I’d love to connect with you.</p>
     <form action="https://api.web3forms.com/submit" method="POST" class="max-w-lg mx-auto glass rounded-2xl p-8">
-      <input type="hidden" name="access_key" value="b1a0fc4d-94eb-4507-952d-31ebb68cb48f" />
-      <input type="text" name="name" placeholder="Your Name" required class="w-full mb-4 p-3 rounded-lg text-gray-900" />
-      <input type="email" name="email" placeholder="Your Email" required class="w-full mb-4 p-3 rounded-lg text-gray-900" />
+      <input type="hidden" name="access_key" value="b1a0fc4d-94eb-4507-952d-31ebb68cb48f">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full mb-4 p-3 rounded-lg text-gray-900">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full mb-4 p-3 rounded-lg text-gray-900">
       <textarea name="message" placeholder="Your Message" required class="w-full mb-4 p-3 rounded-lg text-gray-900"></textarea>
       <button type="submit" class="btn px-6 py-3 rounded-full font-semibold">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
-  <footer class="mt-12 py-8 w-full">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+<footer class="bg-black shadow-lg mt-12 py-8 w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      
+      <!-- Address -->
       <div>
         <h3 class="text-lg font-bold gradient-text mb-3">Address</h3>
-        <p class="text-gray-400 text-sm">3/85 Karapaga Vinayagar St, Vattamuthampatti, Salem - 30</p>
+        <ul class="text-sm text-gray-400 space-y-2">
+          <li>
+            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <ion-icon name="navigate-circle-outline" class="mr-2"></ion-icon>
+              3/85 Karapaga Vinayagar St,
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              Vattamuthampatti,
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              S.Kollapatty, Salem - 30
+            </a>
+          </li>
+        </ul>
       </div>
+
+      <!-- Contact Me -->
       <div>
-        <h3 class="text-lg font-bold gradient-text mb-3">Contact</h3>
-        <p class="text-gray-400 text-sm">📧 sugavanesraja6598@gmail.com</p>
-        <p class="text-gray-400 text-sm">📞 +91 6383938287</p>
+        <h3 class="text-lg font-bold gradient-text mb-3">Contact Me</h3>
+        <ul class="text-sm text-gray-400 space-y-2">
+          <li>
+            <a href="mailto:sugavanesraja6598@gmail.com" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <i class="fas fa-envelope mr-2"></i>
+              sugavanesraja6598@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+916383938287" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <i class="fas fa-phone mr-2"></i>
+              +91 6383938287
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              Salem, Tamil Nadu, India
+            </a>
+          </li>
+        </ul>
       </div>
+
+      <!-- Social Media -->
       <div>
-        <h3 class="text-lg font-bold gradient-text mb-3">Follow Me</h3>
-        <div class="flex justify-center md:justify-start space-x-4 text-gray-400 text-xl">
-          <a href="https://github.com/Sugavaneswaran17" class="hover:text-[#ff6a00]"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/sugavaneswaran-sugavanes-896687269/" class="hover:text-[#ee0979]"><i class="fab fa-linkedin"></i></a>
-          <a href="https://facebook.com" class="hover:text-blue-500"><i class="fab fa-facebook"></i></a>
-        </div>
+        <h3 class="text-lg font-bold gradient-text mb-3">Social Media</h3>
+        <ul class="text-sm text-gray-400 space-y-2">
+          <li>
+            <a href="https://www.facebook.com" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <i class="fab fa-facebook mr-2"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <i class="fab fa-twitter mr-2"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Sugavaneswaran17" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <i class="fab fa-github mr-2"></i>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sugavaneswaran-sugavanes-896687269/" class="flex justify-center md:justify-start items-center hover:text-[#ff7e5f] transition-colors">
+              <i class="fab fa-linkedin mr-2"></i>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
       </div>
+
     </div>
-    <div class="text-center text-xs text-gray-500 mt-6 border-t border-gray-700 pt-4">
+
+    <!-- Bottom Line -->
+    <div class="border-t border-gray-800 mt-8 pt-4 text-center text-gray-500 text-xs">
       © 2025 Sugavaneswaran R | All Rights Reserved
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Animations -->
   <script>
     ScrollReveal().reveal('section', {
       duration: 1000,
-      distance: '60px',
+      distance: '50px',
       easing: 'ease-out',
       origin: 'bottom',
       reset: true
@@ -221,3 +254,4 @@
   </script>
 </body>
 </html>
+
