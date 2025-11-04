@@ -1,384 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Sugavaneswaran R</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #0a0a0a;
-            color: #ffffff;
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #ff7e5f, #feb47b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
-        }
-        .card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(255, 126, 95, 0.3);
-        }
-        .neon-border {
-            border: 2px solid transparent;
-            border-image: linear-gradient(45deg, #ff7e5f, #feb47b);
-            border-image-slice: 1;
-        }
-        .neon-button {
-            background: linear-gradient(45deg, #ff7e5f, #feb47b);
-            color: #fff;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .neon-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(255, 126, 95, 0.5);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugavaneswaran R | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #0f0f0f, #000);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 106, 0, 0.5);
+    }
+
+    header {
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
+<body>
 
-<body class="gradient-bg min-h-screen">
-
-    <!-- Header -->
-    <header class="bg-black shadow-lg">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div>
-                <h1 class="text-xl font-bold gradient-text">SUGAVANESWARAN R</h1>
-                <p class="text-sm text-gray-400">BSC COMPUTER SCIENCE</p>
-            </div>
-            <nav>
-                <div class="nav-links absolute bg-black md:min-h-fit min-h-[50vh] right-0 top-[-100%] md:w-auto w-full items-center px-5 transition-transform duration-300 ease-in-out">
-                    <ul class="flex md:flex-row flex-col md:items-center gap-[4vw] gap-8">
-                        <li><a class="hover:text-[#ff7e5f]" href="#home">Home</a></li>
-                        <li><a class="hover:text-[#ff7e5f]" href="#about">About</a></li>
-                        <li><a class="hover:text-[#ff7e5f]" href="#projects">Projects</a></li>
-                        <li><a class="hover:text-[#ff7e5f]" href="#skills">Skills</a></li>
-                        <li><a class="hover:text-[#ff7e5f]" href="#contact">Contact</a></li>
-                        <a href="Sugavaneswaran _Cv (3).pdf" download="Sugavaneswaran _Cv (3).pdf" class="btn"><button class="neon-button px-5 py-2 rounded-full">Download CV</button></a>
-                    </ul>
-                </div>
-                <div class="flex items-center gap-6"></div>
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl text-white cursor-pointer"></ion-icon>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Introduction Section -->
-    <section id="home" class="text-center p-8 bg-black rounded-lg shadow-lg mx-4 mt-8 md:mx-20 neon-border">
-        <img src="images2.jpg" alt="Profile Image" class="mx-auto mb-4 rounded-full w-32 h-32 border-4 border-[#ff7e5f]">
-        <h1 class="text-2xl font-bold gradient-text mb-2">Hello, I'm SUGAVANESWARAN R</h1>
-        <p class="text-gray-400 text-lg mb-4">BSC COMPUTER SCIENCE</p>
-        <p class="text-gray-400 mb-4">Hello! I am a B.Sc. Computer Science fresher, eager to begin my professional journey. With a strong academic foundation and a passion for technology, I am actively seeking job opportunities to apply my skills and contribute to a dynamic team.</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="bg-black py-8 rounded-lg shadow-lg mx-4 md:mx-20 mt-8 neon-border">
-        <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left">
-            <div class="md:w-1/2 mb-10 md:mb-4">
-                <img src="images1.jpg" alt="Your Picture" class="rounded-lg mx-auto md:mx-10 md:w-2/1 border-4 border-[#ff7e5f]">
-            </div>
-            <div class="md:w-1/2">
-                <h2 class="text-2xl font-bold gradient-text mb-4">About Me</h2>
-                <p class="text-gray-400 mb-4">
-                    I am a B.Sc. Computer Science fresher with a strong academic foundation and a passion for technology. Eager to embark on my professional journey, I am actively seeking job opportunities where I can apply my skills and grow within a dynamic team.
-                </p>
-                <p class="text-gray-400 mb-4">
-                    I enjoy collaborating with cross-functional teams to create innovative solutions that enhance user experiences. Outside of academics, I love exploring new technologies, participating in hackathons, and sharing knowledge within the community.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="projects" class="container mx-auto py-8">
-        <h2 class="text-2xl font-bold gradient-text mb-4 text-center">Portfolio</h2>
-        <p class="text-center text-gray-400 mb-8">My Amazing Works</p>
-        <div class="flex flex-wrap -mx-4">
-            <!-- Project 1 -->
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-                <div class="card p-6 rounded-lg">
-                    <img src="images8.jpg" alt="Project Image" class="rounded-lg mb-4">
-                    <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">Django</h3>
-                    <p class="text-gray-400 mb-4">Web Application for Railway Reservation</p>
-                    <a href="https://github.com/Sugavaneswaran17/Railway-Reservation-system" class="text-[#ff7e5f] hover:underline">VIEW PROJECT</a>
-                </div>
-            </div>
-<!-- Project 2 -->
-<div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-    <div class="card p-6 rounded-lg">
-        <img src="images14.jpg" alt="Project Image" class="rounded-lg mb-4">
-        <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">JavaScript</h3>
-        <p class="text-gray-400 mb-4">Web Application for Weather-app</p>
-        <div class="flex space-x-4">
-            <a href="https://github.com/Sugavaneswaran17/weather-app" class="text-[#ff7e5f] hover:underline">VIEW PROJECT</a>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;
-            <a href="https://sugavaneswaran17.github.io/weather-app/" class="text-[#ff7e5f] hover:underline">TRY IT NOW</a>
-        </div>
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold gradient-text">SUGAVANESWARAN R</h1>
+      <nav>
+        <ul class="hidden md:flex space-x-8 text-gray-300">
+          <li><a href="#home" class="hover:text-[#ff6a00]">Home</a></li>
+          <li><a href="#about" class="hover:text-[#ff6a00]">About</a></li>
+          <li><a href="#projects" class="hover:text-[#ff6a00]">Projects</a></li>
+          <li><a href="#skills" class="hover:text-[#ff6a00]">Skills</a></li>
+          <li><a href="#contact" class="hover:text-[#ff6a00]">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="Sugavaneswaran_CV.pdf" download class="btn px-4 py-2 rounded-full text-sm font-semibold">Download CV</a>
     </div>
-</div>
+  </header>
 
-<!-- Project 3 -->
-<div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-    <div class="card p-6 rounded-lg">
-        <img src="images7.jpg" alt="Project Image" class="rounded-lg mb-4">
-        <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">HTML CSS</h3>
-        <p class="text-gray-400 mb-4">Currency Converter Website</p>
-        <div class="flex space-x-4">
-            <a href="https://github.com/Sugavaneswaran17/currency-converter" class="text-[#ff7e5f] hover:underline">VIEW PROJECT</a>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;
-            <a href="https://sugavaneswaran17.github.io/currency-converter/"  class="text-[#ff7e5f] hover:underline">TRY IT NOW</a>
-        </div>
+  <!-- Home -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24">
+    <img src="images2.jpg" class="w-40 h-40 rounded-full border-4 border-[#ff6a00] mb-6 shadow-lg hover:scale-105 transition">
+    <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-2">Hello, I'm Sugavaneswaran R</h2>
+    <p class="text-gray-400 text-lg mb-4">B.Sc. Computer Science | Web Developer</p>
+    <p class="text-gray-400 max-w-2xl">I’m a passionate B.Sc. Computer Science fresher eager to kickstart my career. I love building clean, responsive web applications using HTML, CSS, JavaScript, Python, and Django.</p>
+    <a href="#projects" class="mt-6 btn px-6 py-3 rounded-full font-semibold">View My Work</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 glass mx-4 md:mx-20 mt-8 rounded-2xl px-8">
+    <h2 class="text-3xl font-bold gradient-text text-center mb-10">About Me</h2>
+    <div class="flex flex-col md:flex-row items-center">
+      <img src="images1.jpg" class="w-72 rounded-xl border-4 border-[#ee0979] mb-6 md:mb-0 md:mr-10 shadow-lg">
+      <p class="text-gray-300 text-lg leading-relaxed">
+        I’m a Computer Science graduate passionate about front-end and full-stack web development. I enjoy turning complex problems into simple, beautiful, and intuitive designs. I’m looking for opportunities to grow and collaborate with innovative teams.
+      </p>
     </div>
-</div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="container mx-auto py-8">
-        <h2 class="text-2xl font-bold gradient-text mb-4 text-center">My Skills</h2>
-        <p class="text-center text-gray-400 mb-8">I Develop Skills Regularly</p>
-        <div class="flex flex-wrap -mx-4">
-            <!-- Skill 1 -->
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">WORD</h3>
-                    <div class="relative pt-1">
-                        <div class="flex mb-2 items-center justify-between">
-                            <div class="text-right">
-                                <span class="text-xs font-semibold inline-block text-[#ff7e5f]">95%</span>
-                            </div>
-                        </div>
-                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
-                            <div style="width:95%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#ff7e5f]"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Skill 2 -->
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">EXCEL</h3>
-                    <div class="relative pt-1">
-                        <div class="flex mb-2 items-center justify-between">
-                            <div class="text-right">
-                                <span class="text-xs font-semibold inline-block text-[#ff7e5f]">75%</span>
-                            </div>
-                        </div>
-                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
-                            <div style="width:75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#ff7e5f]"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Skill 3 -->
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">POWERPOINT</h3>
-                    <div class="relative pt-1">
-                        <div class="flex mb-2 items-center justify-between">
-                            <div class="text-right">
-                                <span class="text-xs font-semibold inline-block text-[#ff7e5f]">70%</span>
-                            </div>
-                        </div>
-                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
-                            <div style="width:70%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#ff7e5f]"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more skills here -->
-            <!-- Skill 4 -->
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">PYTHON</h3>
-                    <div class="relative pt-1">
-                        <div class="flex mb-2 items-center justify-between">
-                            <div class="text-right">
-                                <span class="text-xs font-semibold inline-block text-[#ff7e5f]">70%</span>
-                            </div>
-                        </div>
-                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
-                            <div style="width:70%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#ff7e5f]"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <!-- Skill 5 -->
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">WORDPRESS</h3>
-                    <div class="relative pt-1">
-                        <div class="flex mb-2 items-center justify-between">
-                            <div class="text-right">
-                                <span class="text-xs font-semibold inline-block text-[#ff7e5f]">70%</span>
-                            </div>
-                        </div>
-                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
-                            <div style="width:70%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#ff7e5f]"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <!-- Skill 6 -->
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                <div class="card p-6 rounded-lg">
-                    <h3 class="text-[#ff7e5f] text-lg font-bold mb-2">TALLY</h3>
-                    <div class="relative pt-1">
-                        <div class="flex mb-2 items-center justify-between">
-                            <div class="text-right">
-                                <span class="text-xs font-semibold inline-block text-[#ff7e5f]">70%</span>
-                            </div>
-                        </div>
-                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
-                            <div style="width:70%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#ff7e5f]"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Projects -->
+  <section id="projects" class="py-20 text-center">
+    <h2 class="text-3xl font-bold gradient-text mb-6">My Projects</h2>
+    <p class="text-gray-400 mb-10">Here are a few of my works.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+      <!-- Project Card -->
+      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+        <img src="images8.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Django Railway Reservation</h3>
+        <p class="text-gray-400 mb-4">Full-stack web app using Django for booking and managing train tickets.</p>
+        <a href="https://github.com/Sugavaneswaran17/Railway-Reservation-system" class="text-[#ee0979] hover:underline">View Project</a>
+      </div>
+
+      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+        <img src="images14.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">JavaScript Weather App</h3>
+        <p class="text-gray-400 mb-4">Dynamic weather web app using OpenWeather API with live data.</p>
+        <div class="space-x-4">
+          <a href="https://github.com/Sugavaneswaran17/weather-app" class="text-[#ee0979] hover:underline">View Code</a>
+          <a href="https://sugavaneswaran17.github.io/weather-app/" class="text-[#ff6a00] hover:underline">Live Demo</a>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container mx-auto py-8">
-        <h2 class="text-2xl font-bold gradient-text mb-4 text-center">Contact Me</h2>
-        <p class="text-center text-gray-400 mb-8">Get in Touch!</p>
-        <form action="https://api.web3forms.com/submit" method="POST" class="bg-black shadow-md rounded px-8 pt-6 pb-8 mb-4 neon-border">
-            <input type="hidden" name="access_key" value="b1a0fc4d-94eb-4507-952d-31ebb68cb48f">
-            <div class="mb-4">
-                <label class="block text-gray-400 text-sm font-bold mb-2" for="Name">Name</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Name" type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-400 text-sm font-bold mb-2" for="Email">Email</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Email" type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="mb-6">
-                <label class="block text-gray-400 text-sm font-bold mb-2" for="Message">Message</label>
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Message" name="message" placeholder="Your Message" required></textarea>
-            </div>
-            <div class="flex items-center justify-between">
-                <button type="submit" class="neon-button px-5 py-2 rounded-full">
-                    Send Message
-                </button>
-            </div>
-        </form>
-    </section>
-
-    <!-- Footer -->
-<footer class="bg-black shadow-lg mt-12 py-8 w-full">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Address -->
-            <div>
-                <h3 class="text-lg font-bold gradient-text mb-2">Address</h3>
-                <ul class="text-sm text-gray-400 space-y-2">
-                    <li>
-                        <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex items-center hover:text-[#ff7e5f]">
-                            <ion-icon name="navigate-circle-outline" class="mr-2"></ion-icon>
-                            3/85 Karapaga Vinayagar St,
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex items-center hover:text-[#ff7e5f]">
-                            Vattamuthampatti,
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="flex items-center hover:text-[#ff7e5f]">
-                            S.Kollapatty, Salem-30
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Contact Me -->
-            <div>
-                <h3 class="text-lg font-bold gradient-text mb-2">Contact Me</h3>
-                <ul class="text-sm text-gray-400 space-y-2">
-                    <li>
-                        <a href="mailto:sugavanesraja6598@gmail.com" class="flex items-center hover:text-[#ff7e5f]">
-                            <i class="fas fa-envelope mr-2"></i>
-                            sugavanesraja6598@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:+916383938287" class="flex items-center hover:text-[#ff7e5f]">
-                            <i class="fas fa-phone mr-2"></i>
-                            +91 6383938287
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" class="flex items-center hover:text-[#ff7e5f]">
-                            <i class="fas fa-map-marker-alt mr-2"></i>
-                            Salem, Tamil Nadu, India
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Social Media -->
-            <div>
-                <h3 class="text-lg font-bold gradient-text mb-2">Social Media</h3>
-                <ul class="text-sm text-gray-400 space-y-2">
-                    <li>
-                        <a href="https://www.facebook.com" class="flex items-center hover:text-[#ff7e5f]">
-                            <i class="fab fa-facebook mr-2"></i>
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com" class="flex items-center hover:text-[#ff7e5f]">
-                            <i class="fab fa-twitter mr-2"></i>
-                            Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Sugavaneswaran17" class="flex items-center hover:text-[#ff7e5f]">
-                            <i class="fab fa-github mr-2"></i>
-                            GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/sugavaneswaran-sugavanes-896687269/" class="flex items-center hover:text-[#ff7e5f]">
-                            <i class="fab fa-linkedin mr-2"></i>
-                            LinkedIn
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+        <img src="images7.jpg" class="rounded-lg mb-4">
+        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Currency Converter</h3>
+        <p class="text-gray-400 mb-4">Responsive currency converter built with HTML, CSS, and JavaScript.</p>
+        <div class="space-x-4">
+          <a href="https://github.com/Sugavaneswaran17/currency-converter" class="text-[#ee0979] hover:underline">View Code</a>
+          <a href="https://sugavaneswaran17.github.io/currency-converter/" class="text-[#ff6a00] hover:underline">Live Demo</a>
         </div>
-
-        <!-- Bottom Text -->
-        <div class="mt-8 border-t border-gray-800 pt-4 text-center text-sm text-gray-400">
-            &copy; 2025 SUGAVANESWARAN. All Rights Reserved.
-        </div>
+      </div>
     </div>
-</footer>
+  </section>
 
-    <script>
-        const navLinks = document.querySelector('.nav-links');
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu';
-            navLinks.classList.toggle('top-16'); // Change this to your desired position
-        }
-    </script>
+  <!-- Skills -->
+  <section id="skills" class="py-20 glass mx-4 md:mx-20 rounded-2xl px-8 text-center">
+    <h2 class="text-3xl font-bold gradient-text mb-6">My Skills</h2>
+    <p class="text-gray-400 mb-10">Technologies I’ve worked with</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Python</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Django</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">HTML</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">CSS</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">JavaScript</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">WordPress</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 text-center">
+    <h2 class="text-3xl font-bold gradient-text mb-6">Get In Touch</h2>
+    <p class="text-gray-400 mb-8">I’d love to connect with you.</p>
+    <form action="https://api.web3forms.com/submit" method="POST" class="max-w-lg mx-auto glass rounded-2xl p-8">
+      <input type="hidden" name="access_key" value="b1a0fc4d-94eb-4507-952d-31ebb68cb48f">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full mb-4 p-3 rounded-lg text-gray-900">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full mb-4 p-3 rounded-lg text-gray-900">
+      <textarea name="message" placeholder="Your Message" required class="w-full mb-4 p-3 rounded-lg text-gray-900"></textarea>
+      <button type="submit" class="btn px-6 py-3 rounded-full font-semibold">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-gray-800 text-gray-400">
+    <p>&copy; 2025 Sugavaneswaran R. Built with ❤️ using Tailwind CSS</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('section', {
+      duration: 1000,
+      distance: '50px',
+      easing: 'ease-out',
+      origin: 'bottom',
+      reset: true
+    });
+  </script>
 </body>
+                                                                      </html>                    
 
-</html>
 
 
 
