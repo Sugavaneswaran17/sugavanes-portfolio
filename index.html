@@ -7,44 +7,54 @@
 
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #0f0f0f, #000);
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
       color: #fff;
       scroll-behavior: smooth;
     }
+
     .gradient-text {
       background: linear-gradient(90deg, #ff6a00, #ee0979);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .glass {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(15px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
+
     .btn {
       background: linear-gradient(90deg, #ff6a00, #ee0979);
       color: white;
       transition: 0.3s;
     }
+
     .btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(255, 106, 0, 0.5);
+      box-shadow: 0 0 25px rgba(255, 106, 0, 0.5);
     }
+
     header {
       backdrop-filter: blur(10px);
       background: rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -65,78 +75,70 @@
   </header>
 
   <!-- Home -->
-  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24">
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24" data-aos="zoom-in">
     <img src="images2.jpg" class="w-40 h-40 rounded-full border-4 border-[#ff6a00] mb-6 shadow-lg hover:scale-105 transition">
     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-2">Hello, I'm Sugavaneswaran R</h2>
-    <p class="text-gray-400 text-lg mb-4">B.Sc. Computer Science | Web Developer</p>
-    <p class="text-gray-400 max-w-2xl">I’m a passionate B.Sc. Computer Science fresher eager to kickstart my career. I love building clean, responsive web applications using HTML, CSS, JavaScript, Python, and Django.</p>
+    <p class="text-gray-300 text-lg mb-4">B.Sc. Computer Science | Python Full Stack Developer</p>
+    <p class="text-gray-400 max-w-2xl">I love building clean, responsive web applications using HTML, CSS, JavaScript, Python, and Django.</p>
     <a href="#projects" class="mt-6 btn px-6 py-3 rounded-full font-semibold">View My Work</a>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-20 glass mx-4 md:mx-20 mt-8 rounded-2xl px-8">
+  <section id="about" class="py-20 glass mx-4 md:mx-20 mt-8 rounded-2xl px-8" data-aos="fade-up">
     <h2 class="text-3xl font-bold gradient-text text-center mb-10">About Me</h2>
     <div class="flex flex-col md:flex-row items-center">
       <img src="images1.jpg" class="w-72 rounded-xl border-4 border-[#ee0979] mb-6 md:mb-0 md:mr-10 shadow-lg">
       <p class="text-gray-300 text-lg leading-relaxed">
-        I’m a Computer Science graduate passionate about front-end and full-stack web development. I enjoy turning complex problems into simple, beautiful, and intuitive designs. I’m looking for opportunities to grow and collaborate with innovative teams.
+        I’m a Computer Science graduate passionate about front-end and full-stack development.
+        I love transforming ideas into beautiful, functional, and responsive websites.
+        I’m eager to grow and collaborate with innovative teams.
       </p>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-20 text-center">
+  <section id="projects" class="py-20 text-center" data-aos="fade-up">
     <h2 class="text-3xl font-bold gradient-text mb-6">My Projects</h2>
-    <p class="text-gray-400 mb-10">Here are a few of my works.</p>
-
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
-      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+      <div class="glass rounded-xl p-6 hover:shadow-2xl hover:scale-105 transition" data-aos="zoom-in">
         <img src="images8.jpg" class="rounded-lg mb-4">
-        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Django Railway Reservation</h3>
-        <p class="text-gray-400 mb-4">Full-stack web app using Django for booking and managing train tickets.</p>
+        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Railway Reservation System</h3>
+        <p class="text-gray-400 mb-4">Full-stack app using Django for train ticket management.</p>
         <a href="https://github.com/Sugavaneswaran17/Railway-Reservation-system" class="text-[#ee0979] hover:underline">View Project</a>
       </div>
 
-      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+      <div class="glass rounded-xl p-6 hover:shadow-2xl hover:scale-105 transition" data-aos="zoom-in">
         <img src="images14.jpg" class="rounded-lg mb-4">
-        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">JavaScript Weather App</h3>
-        <p class="text-gray-400 mb-4">Dynamic weather web app using OpenWeather API with live data.</p>
-        <div class="space-x-4">
-          <a href="https://github.com/Sugavaneswaran17/weather-app" class="text-[#ee0979] hover:underline">View Code</a>
-          <a href="https://sugavaneswaran17.github.io/weather-app/" class="text-[#ff6a00] hover:underline">Live Demo</a>
-        </div>
+        <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Weather App</h3>
+        <p class="text-gray-400 mb-4">Live weather app using OpenWeather API.</p>
+        <a href="https://sugavaneswaran17.github.io/weather-app/" class="text-[#ff6a00] hover:underline">Live Demo</a>
       </div>
 
-      <div class="glass rounded-xl p-6 hover:shadow-lg hover:scale-105 transition">
+      <div class="glass rounded-xl p-6 hover:shadow-2xl hover:scale-105 transition" data-aos="zoom-in">
         <img src="images7.jpg" class="rounded-lg mb-4">
         <h3 class="text-xl text-[#ff6a00] font-semibold mb-2">Currency Converter</h3>
-        <p class="text-gray-400 mb-4">Responsive currency converter built with HTML, CSS, and JavaScript.</p>
-        <div class="space-x-4">
-          <a href="https://github.com/Sugavaneswaran17/currency-converter" class="text-[#ee0979] hover:underline">View Code</a>
-          <a href="https://sugavaneswaran17.github.io/currency-converter/" class="text-[#ff6a00] hover:underline">Live Demo</a>
-        </div>
+        <p class="text-gray-400 mb-4">Responsive converter built with HTML, CSS, and JS.</p>
+        <a href="https://sugavaneswaran17.github.io/currency-converter/" class="text-[#ff6a00] hover:underline">Live Demo</a>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-20 glass mx-4 md:mx-20 rounded-2xl px-8 text-center">
+  <section id="skills" class="py-20 glass mx-4 md:mx-20 rounded-2xl px-8 text-center" data-aos="fade-up">
     <h2 class="text-3xl font-bold gradient-text mb-6">My Skills</h2>
-    <p class="text-gray-400 mb-10">Technologies I’ve worked with</p>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-      <div class="glass py-4 rounded-lg hover:scale-105 transition">Python</div>
-      <div class="glass py-4 rounded-lg hover:scale-105 transition">Django</div>
-      <div class="glass py-4 rounded-lg hover:scale-105 transition">HTML</div>
-      <div class="glass py-4 rounded-lg hover:scale-105 transition">CSS</div>
-      <div class="glass py-4 rounded-lg hover:scale-105 transition">JavaScript</div>
-      <div class="glass py-4 rounded-lg hover:scale-105 transition">WordPress</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Python</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">Django</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">HTML</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">CSS</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">JavaScript</div>
+      <div class="card glass py-4 rounded-lg hover:scale-105 transition">WordPress</div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 text-center">
+  <section id="contact" class="py-20 text-center" data-aos="fade-up">
     <h2 class="text-3xl font-bold gradient-text mb-6">Get In Touch</h2>
-    <p class="text-gray-400 mb-8">I’d love to connect with you.</p>
     <form action="https://api.web3forms.com/submit" method="POST" class="max-w-lg mx-auto glass rounded-2xl p-8">
       <input type="hidden" name="access_key" value="b1a0fc4d-94eb-4507-952d-31ebb68cb48f">
       <input type="text" name="name" placeholder="Your Name" required class="w-full mb-4 p-3 rounded-lg text-gray-900">
@@ -146,62 +148,20 @@
     </form>
   </section>
 
-  <!-- Responsive Footer -->
-  <footer class="bg-black shadow-lg mt-12 py-10 w-full text-center md:text-left">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <!-- Address -->
-        <div>
-          <h3 class="text-lg font-bold gradient-text mb-3">Address</h3>
-          <ul class="text-sm text-gray-400 space-y-2">
-            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="hover:text-[#ff7e5f]">3/85 Karapaga Vinayagar St,</a></li>
-            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="hover:text-[#ff7e5f]">Vattamuthampatti,</a></li>
-            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" target="_blank" class="hover:text-[#ff7e5f]">S.Kollapatty, Salem - 30</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div>
-          <h3 class="text-lg font-bold gradient-text mb-3">Contact Me</h3>
-          <ul class="text-sm text-gray-400 space-y-2">
-            <li><a href="mailto:sugavanesraja6598@gmail.com" class="hover:text-[#ff7e5f]"><i class="fas fa-envelope mr-2"></i> sugavanesraja6598@gmail.com</a></li>
-            <li><a href="tel:+916383938287" class="hover:text-[#ff7e5f]"><i class="fas fa-phone mr-2"></i> +91 6383938287</a></li>
-            <li><a href="https://maps.app.goo.gl/waGFnSG9jgb43F3BA" class="hover:text-[#ff7e5f]"><i class="fas fa-map-marker-alt mr-2"></i> Salem, Tamil Nadu</a></li>
-          </ul>
-        </div>
-
-        <!-- Social -->
-        <div>
-          <h3 class="text-lg font-bold gradient-text mb-3">Social Media</h3>
-          <ul class="text-sm text-gray-400 space-y-2">
-            <li><a href="https://facebook.com" class="hover:text-[#ff7e5f]"><i class="fab fa-facebook mr-2"></i> Facebook</a></li>
-            <li><a href="https://twitter.com" class="hover:text-[#ff7e5f]"><i class="fab fa-twitter mr-2"></i> Twitter</a></li>
-            <li><a href="https://github.com/Sugavaneswaran17" class="hover:text-[#ff7e5f]"><i class="fab fa-github mr-2"></i> GitHub</a></li>
-            <li><a href="https://linkedin.com/in/sugavaneswaran-sugavanes-896687269/" class="hover:text-[#ff7e5f]"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="border-t border-gray-800 mt-8 pt-4 text-center text-gray-500 text-xs">
-        © 2025 Sugavaneswaran R | All Rights Reserved
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-black py-8 text-center text-gray-400">
+    <p>© 2025 Sugavaneswaran R </p>
   </footer>
 
+  <!-- AOS + ScrollReveal Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    ScrollReveal().reveal('section', {
-      duration: 1000,
-      distance: '50px',
-      easing: 'ease-out',
-      origin: 'bottom',
-      reset: true
-    });
+    AOS.init({ duration: 1200, once: true });
+    ScrollReveal().reveal('section', { duration: 1000, origin: 'bottom', distance: '50px' });
   </script>
+
 </body>
-                                                                    </html>                    
-
-
+</html>               
 
 
 
